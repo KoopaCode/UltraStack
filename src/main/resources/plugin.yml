@@ -1,0 +1,18 @@
+name: UltraStack
+version: 0.0.1-ALPHA
+main: com.koopalabs.ultrastack.UltraStack
+api-version: '1.21'
+description: Configurable item stacking plugin with multi-world support
+author: KoopaLabs
+website: discord.gg/KmHGjaHWct
+
+commands:
+  ultrastack:
+    description: Main command for UltraStack plugin
+    usage: /<command> reload
+    permission: ultrastack.admin
+
+permissions:
+  ultrastack.admin:
+    description: Allows access to UltraStack admin commands
+    default: op 

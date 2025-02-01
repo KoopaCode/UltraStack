@@ -1,0 +1,57 @@
+# UltraStack Configuration
+# Created by KoopaLabs
+# Discord: discord.gg/KmHGjaHWct
+
+# Enable or disable the plugin globally
+enabled: true
+
+# World Settings
+worlds:
+  # Set to 'all' to enable in all worlds
+  # Or list specific worlds where the plugin should work
+  enabled-worlds:
+    - 'all'
+  # Or specify individual worlds:
+  # enabled-worlds:
+  #   - 'world'
+  #   - 'world_nether'
+  
+  # List worlds where the plugin should be disabled
+  disabled-worlds:
+    - 'example_world'
+
+# Stack Settings
+stack-settings:
+  # Mode can be 'all' or 'specific'
+  # 'all' - affects all stackable items
+  # 'specific' - only affects items in the items list
+  mode: 'all'
+  
+  # Default stack size when mode is 'all'
+  # Set to -1 for infinite stacking
+  default-stack-size: 64000
+  
+  # Specific item settings (used when mode is 'specific')
+  items:
+    DIAMOND:
+      enabled: true
+      max-stack: 512
+    STONE:
+      enabled: true
+      max-stack: 999
+    # Add more items as needed
+    
+# Performance Settings
+performance:
+  # Update stack size on item spawn
+  update-on-spawn: true
+  # Update stack size on item pickup
+  update-on-pickup: true
+  # Update stack size on inventory click
+  update-on-inventory-click: true
+
+# Messages
+messages:
+  prefix: '&8[&bUltraStack&8]'
+  reload: '&aConfiguration reloaded successfully!'
+  no-permission: '&cYou don''t have permission to use this command!' 
